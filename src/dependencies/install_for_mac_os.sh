@@ -38,3 +38,7 @@ install_dependency wget
 echo "Install gcc48..."
 sudo port selfupdate
 sudo port install gcc48
+
+echo "Install java8"
+brew install caskroom/cask/brew-cask
+brew update && brew cask install java
