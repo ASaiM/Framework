@@ -15,4 +15,4 @@ printf "> %-16s" "openssl" && which openssl >/dev/null 2>&1 && echo "ok" || (ech
 printf "> %-16s" "postgresql" && which postgresql >/dev/null 2>&1 && echo "ok" || (echo -n "installing..." && sudo apt-get -yqq install postgresql postgresql-contrib libpq-dev >>$LOGFILE && echo "ok")
 printf "> %-16s" "wget" && which wget >/dev/null 2>&1 && echo "ok" || (echo -n "installing..." && sudo apt-get -yqq install wget >>$LOGFILE && echo "ok")
 printf "> %-16s" "curl" && which curl >/dev/null 2>&1 && echo "ok" || (echo -n "installing..." && sudo apt-get -yqq install curl >>$LOGFILE && echo "ok")
-printf "> %-16s" "java" && which java >/dev/null 2>&1 && echo "ok" || (echo -n "installing..." && sudo apt-get -yqq install openjdk-8-jdk openjdk-8-jre >>$LOGFILE && echo "ok")
+printf "> %-16s" "java" && which java >/dev/null 2>&1 && echo "ok" || (echo -n "installing..." && sudo apt-get -yqq install openjdk-7-jdk openjdk-7-jre >>$LOGFILE && echo "ok")
